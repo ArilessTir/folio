@@ -1,42 +1,221 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ###################  HEADER  ###################*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App{
+  margin: 0 5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: relative;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.header__title {
+  font-size: calc(30px + 2vmin);
+  margin: auto 0;
+  width: 100%;
+}  
+
+.title__item{
+  position: relative;
+}
+
+
+.title__item::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #1A1A1A;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header__bottom{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.bottom__scroll{
+  bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.scroll__txt{
+  font-size: 0.8rem;
+}
+
+.scroll__line{
+  height: 1px;
+  margin-top: 2.2rem;
+  margin-bottom: 0.5rem;
+  width: 4rem;
+  background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5088235977984944) 49%, rgba(255,255,255,0.12787121684611347) 100%);;
+  transform: rotate(90deg);
+}
+
+/* ###################  WORK  ###################*/
+
+.Work{
+  display: flex;
+  margin: 5rem 0;
+  justify-content: space-between;
+}
+
+.work__title{
+  font-size: 50px;
+  width: 50%;
+}
+
+
+.work__flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.flex__card{
+  height: 300px;
+  width: 300px;
+  background-color: beige;
+}
+
+/* ###################  ABOUT  ###################*/
+
+
+.About{
+  position: relative;
+  background-color: aqua;
+}
+
+.about__title{
+  font-size: 50px;
+  width: 50%;
+}
+
+.about__image{
+  height: 500px;
+  width: 400px;
+
+}
+.about__image img{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.about__desc{
+  top: 0;
+}
+
+
+/* ###################  CONTACT  ###################*/
+
+
+.Contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+  padding: 2rem 0;;
+}
+
+.link_item{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  position: relative;
+
+}
+
+.link_item::after{
+  content: '';
+  height: 1px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+
+.link_item:hover::after{
+  width: 100%;
+}
+
+.link_item + .link_item{
+  margin-left: 5rem;
+}
+
+.Contact::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);    
+}
+
+@media (max-width:550px) {
+  .Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
   }
-  to {
-    transform: rotate(360deg);
+  .link_item{
+    margin-top: 1rem;
+  }
+
+  .link_item + .link_item{
+    margin-left: 0rem;
+    margin-top: 3rem;
+    
+  }
+  
+}
+
+
+/* ###################  MEDIA QUERIES  ###################*/
+
+
+@media (max-width:880px){
+  .App{
+    margin: 0 1rem;
+  }
+  .header__title{
+    font-size: 30px;
+  }
+  .Work{
+    display: block;
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+
+@media (max-width:400px){
+  .header__title{
+    font-size: 25px;
+  }
+  .bottom__location{
+    font-size: 10px;
+  } 
 }
