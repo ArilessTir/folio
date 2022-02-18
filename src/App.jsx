@@ -4,7 +4,7 @@ import { CSSRulePlugin, ScrollTrigger } from 'gsap/all'
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import Card from './components/card/card'
-import face from './assets/face.jpg'
+import face from './static/face.jpg'
 import {projects} from './projects'
 
 gsap.registerPlugin(CSSRulePlugin);

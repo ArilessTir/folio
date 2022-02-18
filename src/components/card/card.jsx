@@ -1,6 +1,5 @@
 import React from "react";
 import './card.css'
-import breast from '../../assets/breast.jpg'
 import {BsBoxArrowInUpRight} from 'react-icons/bs'
 import Tag from "../tag/tag";
 
