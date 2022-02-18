@@ -1,3 +1,8 @@
+import breast from './static/breast.jpg';
+import titanic from './static/titanic.jpg';
+import cerfrance from './static/cerfrance.jpg';
+
+
 export const projects= [
     {
         id:1,
@@ -5,7 +10,7 @@ export const projects= [
         description: 'An end to end ML project, for breast cancer prediction',
         techno:['Python','SKlearn','MlFlow','React', 'FastAPI','Docker'],
         link:'https://github.com/ArilessTir/breast-pred',
-        image:'./src/static/breast.jpg'
+        image:breast
     },
     {
         id:2,
@@ -13,7 +18,7 @@ export const projects= [
         description: 'An end to end ML project, with the famous titanic dataset',
         techno:['Python','SKlearn','Flask', 'Grafana','Postgresql'],
         link:'https://github.com/ArilessTir/titanic-app',
-        image:'./src/static/titanic.jpg'
+        image:titanic
     },
     {
         id:3,
@@ -21,7 +26,7 @@ export const projects= [
         description: 'ML enterprise, Project for Cerfrance NPDC & Marketing department',
         techno:['Python','Flask', 'Sklearn','Postgresql','Talend'],
         link:'',
-        image:'./src/static/cerfrance.jpg'
+        image:cerfrance
     }
     ,
     {
@@ -30,6 +35,6 @@ export const projects= [
         description: 'ML enterprise Project for Cerfrance NPDC & Accounting department',
         techno:['Python','Flask', 'Sklearn','Postgresql','Talend'],
         link:'',
-        image:'./src/static/cerfrance.jpg'
+        image:cerfrance
     }
 ]
