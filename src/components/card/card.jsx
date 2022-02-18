@@ -4,25 +4,25 @@ import breast from '../../assets/breast.jpg'
 import {BsBoxArrowInUpRight} from 'react-icons/bs'
 import Tag from "../tag/tag";
 
-const Card = ({id}) =>{
+const Card = ({id, data}) =>{
+
     return(
         <div className="Card" id={id}>
             <div className="Card__image">
-                <img src={breast} alt="" />
+                <img src={data.image} alt="" />
             </div>
             <div className="Card__content">
-                <h1 className="content__title"> Breast Cancer</h1>
-                <p className="content__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi deserunt libero tempore at, iste ex laborum ipsum velit iure.
-                </p>
+                <h1 className="content__title"> {data?.name}</h1>
+                <p className="content__description">{data?.description} </p>
                 <div className="content__tag">
-                    <Tag name={"Python"}/>
-                    <Tag name={"React"}/>
-                    <Tag name={"FastAPI"}/>
-                    <Tag name={"Docker"}/>
+                    {data.techno.map((techno)=>{
+                        return(
+                            <Tag name={techno} key={techno.id}/>
+                        )
+                    })}
                 </div>
 
-                <a className="content__link" href="https://github.com/ArilessTir/breast-pred" target="_blank">
+                <a className="content__link" href={data?.link} target="_blank">
                     <p>Open in github</p>
                     <BsBoxArrowInUpRight />
                 </a>

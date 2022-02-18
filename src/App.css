@@ -1,5 +1,5 @@
 section{
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 
@@ -82,7 +82,7 @@ section{
 
 .work__title{
   font-size: 50px;
-  width: 50%;
+  width: 25%;
 }
 
 
@@ -97,7 +97,6 @@ section{
 .flex__card{
   height: 300px;
   width: 300px;
-  background-color: beige;
 }
 
 /* ###################  ABOUT  ###################*/

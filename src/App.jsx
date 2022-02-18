@@ -5,13 +5,14 @@ import './App.css'
 import Navbar from './components/navbar/navbar'
 import Card from './components/card/card'
 import face from './assets/face.jpg'
+import {projects} from './projects'
 
 gsap.registerPlugin(CSSRulePlugin);
 gsap.registerPlugin(ScrollTrigger)
 function App() {
 
   useEffect(()=>{
-
+    console.log(projects);
     let titleSpan= CSSRulePlugin.getRule('.title__item:after') 
 
     const workTl = gsap.timeline();
@@ -24,20 +25,20 @@ function App() {
       duration:1,
     })
 
-    workTl.from('.Work',{
-      opacity:0,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.Work'
-      }
-    }).from('#Card',{
-      opacity:0,
-      x:-20,
-      delay:0.5,
-      stagger:{
-        amount:0.8
-      }
-    })
+    // workTl.from('.Work',{
+    //   opacity:0,
+    //   duration:1,
+    //   scrollTrigger:{
+    //     trigger:'.Work'
+    //   }
+    // }).from('#Card',{
+    //   opacity:0,
+    //   x:-20,
+    //   delay:0.5,
+    //   stagger:{
+    //     amount:0.8
+    //   }
+    // })
 
  
   },[])
@@ -64,10 +65,11 @@ function App() {
       <section className='Work'>
         <h1 className='work__title'>WORK</h1>
         <div className='work__flex'>
-          <Card id="Card"/>
-          <Card id="Card"/>
-          <Card id="Card"/>
-          <Card id="Card"/>
+          {projects.map((project)=>{
+            return(
+              <Card id='Card' key={project.id} data={project}/>
+            )
+          })}
         </div>
         
       </section>
