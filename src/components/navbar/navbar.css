@@ -6,6 +6,8 @@
     color: white;
     position: relative;
     height: 5rem;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .nav__link{

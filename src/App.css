@@ -1,3 +1,7 @@
+section{
+  max-width: 1200px;
+}
+
 
 /* ###################  HEADER  ###################*/
 
@@ -9,6 +13,8 @@
 .Header {
   min-height: calc(100vh - 5rem);
   display: flex;
+  max-width: 1920px;
+  margin: auto;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
@@ -71,7 +77,7 @@
 
 .Work{
   display: flex;
-  margin: 5rem 0;
+  margin: 5rem auto;
   justify-content: space-between;
 }
 
@@ -100,7 +106,9 @@
 
 .About{
   position: relative;
-  background-color: aqua;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .about__title{
@@ -109,19 +117,47 @@
 }
 
 .about__image{
-  height: 500px;
+  height: 600px;
   width: 400px;
+  margin: auto ;
 
 }
 .about__image img{
   max-width: 100%;
   object-fit: contain;
+
 }
 
 .about__desc{
-  top: 0;
+  position: absolute;
+  max-width: 600px;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
 }
 
+@media (max-width:880px) {
+  .about__desc{
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+  }
+  
+}
+
+@media (max-width:550px) {
+
+  .About{
+    display: block;
+  }
+  .about__desc{
+    position:inherit;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%,-0%);
+  }
+
+}
 
 /* ###################  CONTACT  ###################*/
 
@@ -133,7 +169,8 @@
   justify-content: center;
   align-items: center; 
   position: relative;
-  padding: 2rem 0;;
+  padding: 2rem 0;
+  margin: 2rem auto;
 }
 
 .link_item{
