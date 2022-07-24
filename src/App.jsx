@@ -23,21 +23,6 @@ function App() {
       },
       duration: 1,
     });
-
-    // workTl.from('.Work',{
-    //   opacity:0,
-    //   duration:1,
-    //   scrollTrigger:{
-    //     trigger:'.Work'
-    //   }
-    // }).from('#Card',{
-    //   opacity:0,
-    //   x:-20,
-    //   delay:0.5,
-    //   stagger:{
-    //     amount:0.8
-    //   }
-    // })
   }, []);
 
   return (
@@ -73,16 +58,15 @@ function App() {
           <img src={face} alt="" />
         </div>
         <p className="about__desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-          cum. Nesciunt iste nisi obcaecati provident, veritatis at nam iure
-          deleniti cumque eum labore inventore hic corrupti, unde beatae, non
-          aspernatur! Doloremque explicabo, animi velit accusantium aperiam
-          veritatis praesentium hic. Possimus tempora totam quam magnam quia ad
-          blanditiis sunt voluptatem molestias ipsam nesciunt ipsa in
-          exercitationem, eum unde esse. Rem, ipsam! Doloribus sapiente illo
-          odio suscipit eius placeat, nihil aliquid eligendi aspernatur corrupti
-          veniam enim eveniet culpa id itaque quaerat, quos dolorum. Dignissimos
-          nobis, minima tempore alias dolore repellat molestias odit.
+          My journey in computer science and data started in 2015, where I
+          studied statistics and computer science at the university of Lille. In
+          parallel I worked two years in work-study contracts for La Poste as a
+          data analyst. Then I continued my education in master computer science
+          at the Catholic University of Lille, with a contract in work-study
+          contracts at Cerfrance as a Data Scientist, where I could work on
+          machine learning projects. Today I work for CGI as a Data Engineer for
+          a retail client, near Lille. So if you think we can match feel free
+          ton contact me.
         </p>
       </section>
 
@@ -90,7 +74,7 @@ function App() {
         <a className="link_item" href="https://github.com/">
           GITHUB
         </a>
-        <a className="link_item" href="">
+        <a className="link_item" href="mailto: ariless.tir@gmail.com">
           EMAIL
         </a>
         <a
