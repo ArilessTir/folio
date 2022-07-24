@@ -1,55 +1,54 @@
-.Card{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 500px;
+.Card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
 }
 
-.Card__image{
-    height: 50%;
-    width: 100%;
+.Card__image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
 }
 
-.Card__image img{
-    max-width: 100%;
-    overflow: hidden;
-    object-fit: contain;
+.Card__image img {
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: contain;
 }
 
-
-.content__tag{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+.content__tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-
-.content__link{
-    margin-top: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
+.content__link {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
-.content__link::after{
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    transition: height 0.5s;
-    z-index: -1;
+.content__link::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.5s;
+  z-index: -1;
 }
 
-.content__link:hover{
-    color: black;
+.content__link:hover {
+  color: black;
 }
 
-.content__link:hover::after{
-    height: 90%;
+.content__link:hover::after {
+  height: 90%;
 }
