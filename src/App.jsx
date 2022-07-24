@@ -60,8 +60,8 @@ function App() {
         <p className="about__desc">
           My journey in computer science and data started in 2015, where I
           studied statistics and computer science at the university of Lille. In
-          parallel I worked two years in work-study contracts for La Poste as a
-          data analyst. Then I continued my education in master computer science
+          parallel, I worked two years in work-study contracts for La Poste as a
+          Data Analyst. Then I continued my education in master computer science
           at the Catholic University of Lille, with a contract in work-study
           contracts at Cerfrance as a Data Scientist, where I could work on
           machine learning projects. Today I work for CGI as a Data Engineer for
