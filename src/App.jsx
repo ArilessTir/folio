@@ -59,14 +59,16 @@ function App() {
         </div>
         <p className="about__desc">
           My journey in computer science and data started in 2015, where I
-          studied statistics and computer science at the university of Lille. In
+          studied statistics and computer science at l'Université de Lille. In
           parallel, I worked two years in work-study contracts for La Poste as a
           Data Analyst. Then I continued my education in master computer science
-          at the Catholic University of Lille, with a contract in work-study
-          contracts at Cerfrance as a Data Scientist, where I could work on
-          machine learning projects. Today I work for CGI as a Data Engineer for
-          a retail client, near Lille. So if you think we can match feel free
-          ton contact me.
+          at L'Université Catholique Lille, with a contract in work-study
+          contracts at Cerfrance as a Data Scientist, where I could build and
+          deploy machine learning projects. Today I work for CGI as a Data
+          Engineer for a retail client, near Lille. <br /> <br />I am passionate
+          about Machine Learning and Mlops technics, and i am looking for
+          missions or job in those areas. So if you think we can match feel free
+          to contact me. 😀
         </p>
       </section>
 
