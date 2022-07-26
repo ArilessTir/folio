@@ -34,15 +34,16 @@ export const projects = [
     name: "Churn",
     description: "An end to end ML project for churn prediction",
     techno: ["Python", "FastApi", "Sklearn", "Postgresql", "Docker"],
-    link: "https://github.com/ArilessTir/churn/blob/main/README.md",
+    link: "https://github.com/ArilessTir/churn",
     image: churn,
   },
   {
     id: 4,
     name: "Airplane Delay ",
-    description: "...",
-    techno: ["Python", "Fastapi", "Sklearn", "Mflow", "Docker"],
-    link: "",
+    description:
+      "The goal of this project is to build ml pipeline and track experimentation localy",
+    techno: ["Python", "Sklearn", "Mflow"],
+    link: "https://github.com/ArilessTir/airlines-delay",
     image: airplane,
   },
 ];

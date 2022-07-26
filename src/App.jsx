@@ -73,7 +73,7 @@ function App() {
       </section>
 
       <section className="Contact">
-        <a className="link_item" href="https://github.com/">
+        <a className="link_item" href="https://github.com/" target="_blank">
           GITHUB
         </a>
         <a className="link_item" href="mailto: ariless.tir@gmail.com">
@@ -82,6 +82,7 @@ function App() {
         <a
           className="link_item"
           href="https://www.linkedin.com/in/ariless-tir-360b6a164/"
+          target="_blank"
         >
           LINKEDIN
         </a>
