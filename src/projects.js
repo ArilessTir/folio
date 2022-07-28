@@ -41,8 +41,8 @@ export const projects = [
     id: 4,
     name: "Airplane Delay ",
     description:
-      "The goal of this project is to build ml pipeline and track experimentation localy",
-    techno: ["Python", "Sklearn", "Mflow"],
+      "The goal of this project is to build ml pipeline and track experimentation on AWS ",
+    techno: ["Python", "Sklearn", "Mflow", "AWS", "Postrgres", "S3"],
     link: "https://github.com/ArilessTir/airlines-delay",
     image: airplane,
   },
