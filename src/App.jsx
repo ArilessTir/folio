@@ -39,7 +39,7 @@ function App() {
             <span className="scroll__txt"> scroll</span>
             <div className="scroll__line"></div>
           </div>
-          <span className="bottom__location"> Lille, France</span>
+          <span className="bottom__location"> Lisbon, Portugal</span>
         </div>
       </header>
 
