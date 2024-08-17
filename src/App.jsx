@@ -31,7 +31,7 @@ function App() {
       <header className="Header">
         <div className="header__title">
           <h1 className="title__item"> Hi , I am Ariless </h1>
-          <h1 className="title__item"> Data scientist</h1>
+          <h1 className="title__item"> ML Engineer </h1>
         </div>
 
         <div className="header__bottom">
@@ -58,17 +58,12 @@ function App() {
           <img src={face} alt="" />
         </div>
         <p className="about__desc">
-          My journey in computer science and data started in 2015, where I
-          studied statistics and computer science at l'Université de Lille. In
-          parallel, I worked two years with a work-study contract at La Poste as
-          a Data Analyst. Then I continued my education in master computer
-          science at L'Université Catholique Lille, with a work-study contract
-          at Cerfrance as a Data Scientist, where I could build and deploy
-          machine learning projects. Today I work for CGI as a Data Engineer for
-          a retail client, near Lille. <br /> <br />I am passionate about
-          Machine Learning and Mlops technics, and i am looking for missions or
-          job in those areas. So if you think we can match feel free to contact
-          me. 😀
+          My journey in computer science and data began in 2015 when I pursued studies in statistics and computer science at l'Université de Lille. 
+          During this time, I gained practical experience working as a Data Analyst at La Poste through a two-year work-study contract. 
+          I continued my education with a master's degree in computer science at L'Université Catholique de Lille, complemented by a work-study role at Cerfrance as a Data Scientist, where I had the opportunity to build and deploy machine learning projects.
+          After completing my studies, I joined CGI as a Data Engineer, where I worked on data projects for a retail client near Lille.
+          Recently, I transitioned to a new role as a Machine Learning Engineer at BNP Paribas in Lisbon, where I continue to deepen my expertise in Machine Learning and MLOps techniques.
+          I am passionate about Machine Learning and MLOps, and I am actively seeking new opportunities or missions in these areas. If you believe we could be a good match, please don't hesitate to reach out. 😊
         </p>
       </section>
 
